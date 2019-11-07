@@ -1,0 +1,3 @@
+# Louis DePace
+
+I am a class of 2020 UMASS Amherst Computer Science (BS) and Psychology on the Neuroscience Track (BS) major. I have been programming for about two years. I have experience in Java, JavaScript/TypeScript, C, C++, SQL, and Python, as well as experience using CSS, HTML, ReactJS, NodeJS, and ExpressJS. I have extensive experience developing full stack web applications using React for the front end, NodeJS and Express for the web server and UI, as well as SQL and NOSQL databases as a model.
