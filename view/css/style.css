@@ -1,0 +1,88 @@
+header .extend {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: 150px;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#header-logo{
+    width:100px;
+    height: 100px;
+}
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+.head-section {
+	text-align: center;	
+}
+.product-info {
+    background-color: cornflowerblue;
+}
+.product-image {
+    margin-top: 30px;
+	margin-left: 60px;
+	width: 70%;
+    height:70%;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.title {
+	color: white;
+
+}
+
+.checked 
+{
+    color: yellow;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.comp-logo-image {
+   width:80%;
+   height:120px;
+}
+
+div {
+	display: block;
+}
+.company-info{
+	text-align: left;
+    color:white;
+}
+
+.company-name {
+    color:white;
+}
+.company-details{
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.company-articles {
+    color: black;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.company-info{
+    color: black;
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 50%);
+}
