@@ -2,6 +2,7 @@ header .extend {
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	height: 150px;
+    
 }
 
 header {
@@ -10,7 +11,7 @@ header {
 }
 
 #header-logo{
-    width:100px;
+    width:  100px;
     height: 100px;
 }
 
@@ -21,6 +22,25 @@ header {
 	padding-bottom: 20px;
 	
 }
+
+header .header-section {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-input {
+    margin-left: 20px;
+}
+
+header .header-section div {
+    flex: 1;
+    flex-basis: 300px;
+}
+
 .head-section {
 	text-align: center;	
 }
@@ -60,7 +80,7 @@ p {
 .ui-tabs-vertical .ui-tabs-nav {
     padding: .2em .1em .2em .2em;
     float: left;
-    width: 12em;
+    width: 20%;
 }
 
 .ui-tabs-vertical .ui-tabs-nav li {
@@ -84,5 +104,5 @@ p {
 .ui-tabs-vertical .ui-tabs-panel {
     padding: 1em;
     float: right;
-    width: 40em;
+    width: 80%;
 }
