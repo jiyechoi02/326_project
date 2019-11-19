@@ -5,8 +5,8 @@ header .extend {
 }
 
 header {
-    background-color: cornflowerblue;
-    color: white;
+    background-color: black;
+    color: black;
 }
 
 #header-logo{
@@ -24,27 +24,30 @@ header {
 .head-section {
 	text-align: center;	
 }
-.product-info {
-    background-color: cornflowerblue;
+
+.picture-section{
+
+
 }
+
 .product-image {
-    margin-top: 30px;
-	margin-left: 60px;
-	width: 70%;
-    height:70%;
-	border: 1px solid white;
+    margin-top:10px;
+	margin-left: 70px;
+	width: 250px;
+    height: 300px;
 	border-radius: 5px;
 }
 
-.title {
-	color: white;
+
+.product-title {
 
 }
 
-.checked 
-{
-    color: yellow;
+.comp-logo-image {
+    width: 180px;
+    height: 100px;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -52,37 +55,34 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.comp-logo-image {
-   width:80%;
-   height:120px;
+
+
+.ui-tabs-vertical .ui-tabs-nav {
+    padding: .2em .1em .2em .2em;
+    float: left;
+    width: 12em;
 }
 
-div {
-	display: block;
-}
-.company-info{
-	text-align: left;
-    color:white;
-}
-
-.company-name {
-    color:white;
-}
-.company-details{
-    color: black;
-    background-color: white;
-    border-bottom: 1px solid black;
+.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important;
+    margin: 0 -1px .2em 0;
 }
 
-.company-articles {
-    color: black;
-    background-color: white;
-    border-bottom: 1px solid black;
+.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
 }
 
-.company-info{
-    color: black;
-    display: grid;
-    list-style: none;
-    grid-template-columns: repeat(2, 50%);
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    padding-bottom: 0;
+    padding-right: .1em;
+    border-right-width: 1px;
+}
+
+.ui-tabs-vertical .ui-tabs-panel {
+    padding: 1em;
+    float: right;
+    width: 40em;
 }
