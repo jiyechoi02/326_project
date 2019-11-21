@@ -33,9 +33,23 @@ header .header-section {
 }
 
 .search-input {
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
+.search-input .url-input-field {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    width: 250px;
+    border-bottom: 1px solid white;
+}
+
+.search-btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
 header .header-section div {
     flex: 1;
     flex-basis: 300px;
@@ -60,7 +74,7 @@ header .header-section div {
 
 
 .product-title {
-
+    font-size: 30px;
 }
 
 .comp-logo-image {
@@ -76,6 +90,70 @@ p {
     margin-inline-end: 0px;
 }
 
+.article-list .article-categories {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    letter-spacing: 0.15em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.article-list .article-categories > * {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.article-list .article-categories > * + * {
+    margin-left: 1em;
+    position: relative;
+}
+
+
+
+.article-list .article-categories a:hover {
+    color: black;
+}
+
+.article-list .article-date {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+
+.article-list .article-date .updated {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.article-list {
+    position: relative;
+    z-index: 1;
+    max-width: 80rem;
+    margin: 0;
+}
+
+.article-list:before {
+    content: "";
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.15s ease;
+}
+
+#tabs li {
+    font-size: 24px;
+}
 
 .ui-tabs-vertical .ui-tabs-nav {
     padding: .2em .1em .2em .2em;
@@ -93,6 +171,7 @@ p {
 
 .ui-tabs-vertical .ui-tabs-nav li a {
     display: block;
+    width: 100%;
 }
 
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
