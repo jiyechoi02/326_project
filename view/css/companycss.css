@@ -59,27 +59,18 @@ header .header-section div {
 	text-align: center;	
 }
 
-.product-section{
-    background-color: #D3D3D3;
-
+.company-overview {
+    margin-left: 200px;
 }
 
-.product-image {
-    margin-top:10px;
-	margin-left: 70px;
-	width: 250px;
-    height: 300px;
-	border-radius: 5px;
-}
-
-
-.product-title {
-    font-size: 30px;
+.comp-title{
+    font-size: 36px;
+    margin-top: 60px;
 }
 
 .comp-logo-image {
-    width: 180px;
-    height: 100px;
+    width: 250px;
+    height: 220px;
 }
 
 p {
@@ -88,6 +79,28 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+
+.nav {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link:hover {
+    border-bottom: 4px solid;
+    border-bottom-color: rgba(8, 95, 247, 0.67);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: white;
+    color: black;
+    border-bottom: 4px solid;
+    border-bottom-color: rgb(8, 95, 247);
 }
 
 .article-list .article-categories {
@@ -158,24 +171,4 @@ p {
 .article-title a:hover {
     color: red;
 }
-.nav {
-    justify-content: center;
-    margin-bottom: 30px;
-}
 
-.nav-link {
-    color: black;
-    font-size: 20px;
-}
-
-.nav-pills .nav-link:hover {
-    border-bottom: 4px solid;
-    border-bottom-color: rgba(8, 95, 247, 0.67);
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: white;
-    color: black;
-    border-bottom: 4px solid;
-    border-bottom-color: rgb(8, 95, 247);
-}
