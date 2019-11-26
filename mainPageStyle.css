@@ -1,0 +1,40 @@
+
+body{
+    background :rgb(255, 255, 255);
+}
+
+.box{
+    margin : 100px auto;
+    width : 500px;
+    height : 50px;
+}
+h1{
+    font-size : 65px;
+    color : #111;
+    font-family: "Bowlby One SC";
+}
+.container{
+ width: 300px;
+ vertical-align : middle;
+ white-space: nowrap;
+ position: relative;
+}
+.container input#searchBar{
+    width: 500px;
+    height : 50px;
+    background: #fff;
+    border-right:none;
+    padding-left : 45px;
+    color :  #000;
+    font-size : 20px;
+    border-radius: 5px;
+    border: solid;
+}
+
+.SearchButtonIcon{
+    width: 40px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: solid;
+}
