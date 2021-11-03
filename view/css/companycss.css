@@ -1,0 +1,174 @@
+header .extend {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	height: 150px;
+    
+}
+
+header {
+    background-color: black;
+    color: black;
+}
+
+#header-logo{
+    width:  150px;
+    height: 100px;
+}
+
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+header .header-section {
+    display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-input {
+    padding-left: 20px;
+}
+
+.search-input .url-input-field {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 14px;
+    width: 250px;
+    border-bottom: 1px solid white;
+}
+
+.search-btn {
+    background-color: black;
+    color: white;
+    border: none;
+}
+header .header-section div {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+.head-section {
+	text-align: center;	
+}
+
+.company-overview {
+    margin-left: 200px;
+}
+
+.comp-title{
+    font-size: 36px;
+    margin-top: 60px;
+}
+
+.comp-logo-image {
+    margin-top : 50px;
+    size : relative;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.nav {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    color: black;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link:hover {
+    border-bottom: 4px solid;
+    border-bottom-color: rgba(8, 95, 247, 0.67);
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: white;
+    color: black;
+    border-bottom: 4px solid;
+    border-bottom-color: rgb(8, 95, 247);
+}
+
+.article-list .article-categories {
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #9b9b9b;
+    letter-spacing: 0.15em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.article-list .article-categories > * {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.article-list .article-categories > * + * {
+    margin-left: 1em;
+    position: relative;
+}
+
+
+
+.article-list .article-categories a:hover {
+    color: black;
+}
+
+.article-list .article-date {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    line-height: 1;
+}
+
+.article-list .article-date .updated {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.article-list {
+    position: relative;
+    z-index: 1;
+    max-width: 80rem;
+    margin: 0;
+}
+
+.article-list:before {
+    content: "";
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: all 0.15s ease;
+}
+
+.article-title a{
+    font-size: 26px;
+}
+
+.article-title a:hover {
+    color: red;
+}
+

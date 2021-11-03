@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Evil Corp</title>
+  
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+      <header>
+          <div class="container-fluid extend">
+              <div class="row">
+                <div class="header-section">
+                    <div class="logo">
+                        <a href="./mainPage.html">
+                            <img src="img/logow.png" alt="ecorp-logo" id="header-logo"></a>
+                       
+                    </div>                   
+                    <div class="search">
+                        <div class="search-input">
+                            <form action="/processLink" method="post">
+                                <input type="text" name="searchBar" id="searchBar" size="25" class="url-input-field" placeholder="Paste any products on amazon here..." />
+                                <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>                            
+              </div>
+          </div>
+      </header>
+      <div class="page-content">
+          <div class="container-fluid product-section">
+              <div class="row">
+                  <div class="col-md-4 picture-section">
+                      <img alt="jacket image" class="product-image" id="image1" itemprop="image" src={{product_img}} />
+                  </div>
+                  <div class="col-md-8 product-info">
+                      <div class="row">
+                          <div class="col-md-12 product-title">
+                              <div class="row">
+                                  <h2>
+                                      <a target="_blank" class="product-title" href="{{siteURL}}">
+                                          <b>{{product_name}}</b>
+                                      </a>
+                                  </h2>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="row price-section" style="margin-top:20px; margin-bottom: 20px;">
+                          
+                       </div>
+                       <div class="row">
+                          <div style="font-size: 30px;" class="col-md-6">
+                              <p>
+                                  By
+                                  <a id="companyName" href={{links.website}}>
+                                      {{comp_name}}
+                                                                      </a>
+                              </p>
+                          </div>
+                          <div class="col-md-6 rating-box">
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="container-fluid company-section">
+              <div class="col-md-12 pagination-centered" id="tabbs">
+                  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills" href="#tabs-1">Company Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills" href="#tabs-2">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="pills-home-tab" data-toggle="pill" role="tab" aria-controls="pills" href="#tabs-3">Ratings &amp; Reviews</a>
+                    </li>
+                  </ul>
+                  
+                  <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="tabs-1" role="tabpanel">
+                          <h2>Company Overview</h2>
+                          <div class="row comp-info-section">
+                              <div class="col-md-6">
+                                  <h4>About</h4>
+                                  <p>{{about}}</p>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  <h4>CSRHub Rating</h4>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <div>
+                                                      <img src="img/angel.png" alt="E corp" id="devil_icon"> <span style="font-size: 26px;">{{csrhubRating}}</span>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                      <div class="col-md-6">
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  <h4>Phone</h4>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <p style="padding-left: 5px">{{phone}}</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  <h4>Industry</h4>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <p style="padding-left: 5px">{{industry}}</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  <h4>Website</h4>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <ul style="list-style:none">
+                                                      <li><a href={{links.website}}>Main Page</a></li>
+                                                      <li><a href={{links.facebook}}>Facebook</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="tabs-2" role="tabpanel">                     
+                          <div class="article-list">
+                              {{#articles}}
+                              <article class="article">
+                                  <h1 class="article-title">
+                                      <a href={{url}} target="_blank">{{title}}</a>
+                                  </h1>
+                                  <div class="article-content">
+                                      <p>
+                                          {{excerpt}}
+                                      </p>
+                                  </div>
+                              </article>
+                              {{/articles}}
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="tabs-3" role="tabpanel">
+                        <h2>Ratings &amp; Reviews</h2>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>User Ratings</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div>
+                                            <img src="img/angel.png" alt="E corp" id="devil_icon"> <span style="font-size: 26px;">{{ratings}}</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container" style="margin-top: 50px;">
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>Title</th>
+                                      <th>User</th>
+                                      <th>Rating</th>
+                                      <th>Review</th>
+                                    </tr>
+                                  </thead>
+                                  {{#reviews}} 
+                                  <tbody>
+                                    <tr>
+                                      <td id="td_title">{{title}}</td>
+                                      <td id="td_user">{{user}}</td>
+                                      <td id="td_rating">{{rating}}</td>
+                                      <td id="td_review">{{review}}</td>
+                                    </tr>
+                                  </tbody>
+                                  {{/reviews}}
+                                </table>
+                            <div class="text-center">
+                                <div id="loadMore">
+                                    <a href="#">Load More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="createReviewBtn" 
+                                style="background-color: black; border:none; margin-top: 10px;">Create</button>
+                            <form action="companies/:company/review" method="POST" class="form-horizontal" id="review_form">                           
+                                <div class="form-group" id="rating_form">
+                                    <label class="col-md-1">Rating:</label>
+                                    <div class="col-md-9" id="rating_stars">
+                                        <span class="star"></span>    
+                                        <span class="star"></span>    
+                                        <span class="star"></span>    
+                                        <span class="star"></span>    
+                                        <span class="star"></span>      
+                                        <input type="text" class ="form-control" name="rating" id="rating_text" hidden>                                
+                                    </div>
+                                </div>
+                                <div class="form-group" id="title_form">
+                                    <input type="text" class="form-control" name="title" placeholder="Title">
+                                    <input type="hidden" name="siteURL" id="siteURL" value={{siteURL}}>
+                                </div>
+                                <div class="form-group" id="user_form">
+                                    <input type="text" class="form-control" name="user" placeholder="User name">                
+                                </div>
+                                <div class="form-group" id="textarea_form">   
+                                    <textarea class="form-control input-lg" name="review" row="3" placeholder="Write a review about this company..."></textarea>
+                                </div> 
+                                
+                                <div class="form-group" id="bnt_form">  
+                                    <input class="btn btn-dark" type="submit" value="Submit">
+                                    <input class="btn btn-light" type="reset" id="cancel" value="Cancel">
+                                </div> 
+                                
+                            </form>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
+      <footer id="sticky-footer">
+            <div class="container-fluid extend">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/logosmw.png" alt="ecorp-logo" id="footer-logo" />
+                    </div>
+                    <div class="col-md-4">
+                        <ul id="footer-list">
+                            <li><a href="./mainPage.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </footer>
+
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"
+              integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+              integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+              crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
