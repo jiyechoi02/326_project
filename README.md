@@ -1,11 +1,5 @@
-//Your team Github repository must include a README.md file (written in Markdown format). The
-README must include a list of the team members as well as links to each member’s Github
-profile page, a description of the project, and instructions on how to install and run the project.
-You should also note any third-party requirements and any other important information that
-would help someone fork your repository and extend your work. The end result should be
-suitable to present to a potential employer.//
 
-# 326_project
+# Evil Corp
 
 ### memebers :
     * Jiye Choi     : https://github.com/jiyechoi02
