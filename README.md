@@ -1,6 +1,6 @@
 
 # Evil Corp
-
+![alt text](https://github.com/jiyechoi02/Evil-Corp/blob/master/view/img/logo.png)
 ### memebers :
     * Jiye Choi     : https://github.com/jiyechoi02
     * Louis DePace  : https://github.com/louis-depace
